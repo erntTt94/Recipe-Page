@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: hsl(30, 54%, 90%);
+    font-family: 'Outfit', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    border: none;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 25px 30px;
+    margin: 30px 0;
+}
+
+img {
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'Young Serif', sans-serif;
+    font-weight: 400;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+#info {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+#preparation {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    padding: 10px 24px;
+}
+
+h3 {
+    color: hsl(332, 51%, 32%);
+    font-size: 17px;
+}
+
+#preparationList {
+    padding-left: 15px;
+    color: hsl(30, 10%, 34%);
+}
+
+span {
+    color: hsl(24, 5%, 18%);
+    font-weight: 600;
+}
+
+#preparationList li,
+#ingrediantsList li,
+#instructionsList li {
+    padding: 5px 10px;
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+    font-family: 'Young Serif', sans-serif;
+    font-weight: 400;
+    margin-top: 18px;
+    margin-bottom: 16px;
+}
+
+#ingrediants,
+#instructions {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+#ingrediantsList {
+    padding: 0 15px;
+    margin-top: 0;
+    color: hsl(30, 10%, 34%);
+
+}
+
+#instructionsList {
+    padding: 0 15px;
+}
+
+#instructionsList li::marker,
+td:nth-of-type(2n) {
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+}
+
+#instructionsList li,
+#nutrition p,
+td:nth-of-type(1) {
+    color: hsl(30, 10%, 34%);
+}
+
+table {
+    table-layout: auto;
+    width: 100%;
+}
+
+td {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 10px 30px;
+
+}
+
+tr:last-child>td {
+    border-bottom: 0;
+}
+
+@media (max-width:500px) {
+    #card {
+        width: 70%;
+    }
+}
